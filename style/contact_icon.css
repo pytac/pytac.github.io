@@ -1,0 +1,18 @@
+.contact-icons a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.contact-icons a:hover {
+    color: #24292e;
+}
+
+.contact-icons i {
+    font-size: 4rem;
+}
+
+.contact-icons {
+    display: grid;
+    grid-template-columns: 10% 10% 1fr;
+    gap: 1vw;
+}

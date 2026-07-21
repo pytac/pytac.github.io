@@ -1,0 +1,120 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+        /* 加上轻微上移，更有层次感 */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    display: block;
+    min-height: 100vh;
+    display: block;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+
+    font-family: 'Monaspace Neonon', sans-serif;
+}
+
+/* 菜单容器（导航栏） */
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #eee;
+    padding: 16px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ⬇️ 核心修改：清除 ul 默认样式，变成干净的“列” */
+.menu ul {
+    display: flex;
+    gap: 32px;              /* 每个菜单项之间的间距，调大调小随你 */
+    list-style: none;       /* 去掉圆点 */
+    margin: 0;              /* 去掉外边距 */
+    padding: 0;             /* 去掉缩进 */
+}
+
+/* 菜单链接样式 */
+.menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-family: 'Monaspace Neon', sans-serif;
+    transition: color 0.3s;
+    padding: 8px 0;         /* 可选：上下加点内边距，让点击区域更大 */
+    border-bottom: 2px solid transparent; /* 预留下划线位置，悬停时出现 */
+}
+
+.menu a:hover {
+    color: #4A90D9;
+    border-bottom-color: #4A90D9; /* 悬停时出现彩色下划线，更高级 */
+}
+
+/* 首屏：占满一屏高度，内部 flex 居中 */
+.hero {
+    min-height: 85vh;       /* 至少占满视口高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f0f2f5;      /* 可以换背景色或渐变 */
+    padding: 20px;
+}
+
+.head {
+    width: 35%;
+    height: 35%;
+}
+
+
+.content {
+    font-family: 'Monaspace Radon', sans-serif;
+}
+
+/* 新增的普通区块，可以设置 padding 和背景 */
+.about, .projects, .contact {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;          /* 水平居中 */
+    border-bottom: 1px solid #eee; /* 分割线 */
+}
+
+/* 项目卡片（flex 布局示例） */
+.projects {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    flex: 1 1 200px;         /* 自适应宽度，最小200px */
+    text-align: center;
+}
+
+/* 底部样式 */
+.footer {
+    background: #1e2a3a;
+    color: #aaa;
+    text-align: center;
+    padding: 30px;
+}
+
+/* 字体 */
+.radon {
+    font-family: 'Monaspace Radon', sans-serif;
+}
