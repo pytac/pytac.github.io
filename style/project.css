@@ -1,0 +1,41 @@
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.project-card {
+    background: #fafbfc;
+    padding: 5vh;
+    border: 1px solid #e9ecf0;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.project-card > h2, .pro1 {
+    grid-column: 1/ span 2;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.repo * {
+    text-decoration: underline black 2px;
+    text-align: left;
+    margin: 1vh auto;
+}
+
+.description {
+    margin: center;
+}
+
+.project-card:hover {
+    background: #ffffff;
+    border-color: #d0d7de;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+}
+

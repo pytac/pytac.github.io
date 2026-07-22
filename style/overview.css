@@ -62,13 +62,13 @@ body {
 
 /* 首屏：占满一屏高度，内部 flex 居中 */
 .hero {
-    min-height: 85vh;       /* 至少占满视口高度 */
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #f0f2f5;      /* 可以换背景色或渐变 */
+    background: #f0f2f5;
     padding: 20px;
 }
 
@@ -90,21 +90,7 @@ body {
     border-bottom: 1px solid #eee; /* 分割线 */
 }
 
-/* 项目卡片（flex 布局示例） */
-.projects {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.project-card {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    flex: 1 1 200px;         /* 自适应宽度，最小200px */
-    text-align: center;
-}
+/* 项目卡片 in project.css */
 
 /* 底部样式 */
 .footer {

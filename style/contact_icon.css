@@ -3,16 +3,55 @@
     color: #333;
     transition: color 0.3s;
 }
-.contact-icons a:hover {
-    color: #24292e;
-}
-
-.contact-icons i {
-    font-size: 4rem;
-}
 
 .contact-icons {
     display: grid;
-    grid-template-columns: 10% 10% 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1vw;
+}
+
+.icon-card {
+    background: #fafbfc;
+    border: 1px solid #e9ecf0;
+    border-radius: 16px;
+    padding: 25px 10px 18px;
+    text-align: center;
+    transition: all 0.25s ease;
+    cursor: default;
+}
+
+.icon-card:hover {
+    background: #ffffff;
+    border-color: #d0d7de;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+}
+
+/* 图标 */
+.icon-card i {
+    font-size: 3rem;
+    color: #24292e;
+    display: block;
+    margin-bottom: 12px;
+    transition: color 0.2s;
+}
+
+/* 类名标签 (灰色小标) */
+.icon-card .class-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #4b5563;
+    background: #eef2f6;
+    padding: 4px 10px;
+    border-radius: 30px;
+    display: inline-block;
+    letter-spacing: 0.3px;
+    font-family: 'Courier New', monospace;
+}
+
+/* 描述文字 */
+.icon-card .desc {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 6px;
 }
