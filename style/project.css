@@ -19,17 +19,24 @@
     grid-column: 1/ span 2;
 }
 
-.project-card a {
+.project-card {
     text-decoration: none;
     color: black;
 }
 
-.repo * {
-    /* text-decoration: underline black 2px; */
-    
+.repo {
+    display: flex;
+}
+
+.repo a{
+    text-decoration: none;
+    color: black;
     font-family: 'Courier New', monospace;
     text-align: left;
-    margin: 1vh auto;
+}
+
+.repo a:hover {
+    text-decoration: underline black 2px;
 }
 
 .description {

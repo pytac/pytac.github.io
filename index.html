@@ -60,38 +60,50 @@
 
     <!-- 区块2：我的项目 -->
     <section class="projects">
-        <h2 class="radon">代表作 Masterpiece (点击跳转)</h2>
-        <div class="project-card pro1">
-            <a href="#">
-                <div class="repo">
-                    <h5>pytac/pytac.github.io</h5>
-                </div>
-                <div class="description">
-                    <h2 style="color: black;">我的用心之作，就是</h2>
-                    <h2 style="color: #5a5a5a;">>>这个网站<<</h2>
-                </div>
-            </a>
+        <h2 class="radon">代表作 Masterpiece (点击跳转到介绍网页)</h2>
+    <!-- data-href 需要填写介绍项目的网页 -->
+
+        <div class="project-card pro1" data-href="#">
+            <div class="repo">
+                <a href="https://github.com/pytac/pytac.github.io" target="_blank">pytac/pytac.github.io</a>
+            </div>
+            
+            <div class="description">
+                <h2 style="color: black;">我的用心之作，就是</h2>
+                <h2 style="color: #5a5a5a;">>>这个网站<<</h2>
+            </div>
         </div>
-        <div class="project-card pro2">
-            <a href="https://github.com/pytac/YX-find-uniform">
-                <div class="repo">
-                    <h5>pytac/YX-find-uniform</h5>
-                </div>
-                <div class="description">
-                    <h3>校服上报，对抗丢失。「衣寻」你值得考虑!</h3>
-                </div>
-            </a>
+        <div class="project-card pro2" data-href="https://github.com/pytac/YX-find-uniform">
+            <div class="repo">
+                <a href="https://github.com/pytac/YX-find-uniform" target="_blank">pytac/YX-find-uniform</a>
+            </div>
+            <div class="description">
+                <h3>校服上报，对抗丢失。「衣寻」你值得考虑!</h3>
+            </div>
         </div>
-        <div class="project-card pro3">
-            <a href="https://github.com/pytac/Optimize_baidu_website">
-                <div class="repo">
-                    <h5>pytac/Optimize_baidu_website</h5>
-                </div>
-                <div class="description">
-                    <h3>百度广告多、布局乱？一个插件搞定！</h3>
-                </div>
-            </a>
+        <div class="project-card pro3" data-href="https://github.com/pytac/Optimize_baidu_website">
+            <div class="repo">
+                <a href="https://github.com/pytac/Optimize_baidu_website" target="_blank">pytac/Optimize_baidu_website</a>
+            </div>
+            <div class="description">
+                <h3>百度广告多、布局乱？一个插件搞定！</h3>
+            </div>
         </div>
+
+        <script>
+            "use strict";
+
+            document.querySelectorAll(".project-card .repo a").forEach((item) => 
+                item.addEventListener("click", function(e) {
+                    e.stopPropagation();
+                })
+            );
+            document.querySelectorAll(".project-card").forEach((item) => 
+                item.addEventListener("click", function() {
+                    window.open(item.dataset.href, "_blank");
+                })
+            );
+        </script>
     </section>
 
     <!-- 区块3：联系 -->
@@ -114,16 +126,35 @@
                     <div class="desc">邮箱</div>
                 </div>
             </a>
+
+            <a href="https://space.bilibili.com/3493138964416547" target="_blank" aria-label="Bilibili">
+                <div class="icon-card">
+                    <i>
+                        <img src="https://www.bilibili.com/favicon.ico" alt="Bilibili" class="icon">
+                    </i>
+                    <span class="class-name">https://space.bilibili.com/3493138964416547</span>
+                    <div class="desc">Bilibili</div>
+                </div>
+            </a>
+
+            <a href="https://blog.csdn.net/RedStone114514" target="_blank" aria-label="CSDN">
+                <div class="icon-card">
+                    <i class="fa-brands fa-csdn"></i>
+                    <span class="class-name">https://blog.csdn.net/RedStone114514</span>
+                    <div class="desc">CSDN</div>
+                </div>
+            </a>
         </div>
     </section>
 
     <!-- ========== 底部（可选） ========== -->
     <footer class="footer">
-        <div class="website_intro">
+        <div class="website_info">
             <p>本网站使用 CC BY-NC-SA 4.0 许可证</p>
+            <p>本网站的代码在 <a href="https://github.com/pytac/pytac.github.io">GitHub</a> 上开源</p>
         </div>
         <div class="copyright">
-            © 2026 Pytac
+            © 2026 Pytac, All Rights Reserved.
         </div>
     </footer>
 
