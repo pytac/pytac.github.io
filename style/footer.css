@@ -1,0 +1,28 @@
+.footer {
+    background: #1e2a3a;
+    color: #aaa;
+    text-align: center;
+
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 3fr 1fr;
+    height: 20vh;
+}
+
+.footer *{
+    font-size: 0.7rem;
+}
+
+.footer a {
+    color: #d3d3d3;
+}
+
+.website_info {
+    grid-column: 2;
+}
+
+.copyright {    
+    grid-column: 2 / span 2;
+    margin: auto;
+}

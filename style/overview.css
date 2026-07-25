@@ -92,13 +92,7 @@ body {
 
 /* 项目卡片 in project.css */
 
-/* 底部样式 */
-.footer {
-    background: #1e2a3a;
-    color: #aaa;
-    text-align: center;
-    padding: 30px;
-}
+/* 底部样式 in footer.css */
 
 /* 字体 */
 .radon {

@@ -36,6 +36,15 @@
     transition: color 0.2s;
 }
 
+/* .icon-card img.bil-icon { */
+.icon-card img {
+    width: auto;
+    height: 3rem;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
 /* 类名标签 (灰色小标) */
 .icon-card .class-name {
     font-size: 0.8rem;

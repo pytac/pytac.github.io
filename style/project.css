@@ -15,7 +15,7 @@
     transition: all 0.25s ease;
 }
 
-.project-card > h2, .pro1 {
+.projects > h2, .pro1 {
     grid-column: 1/ span 2;
 }
 
