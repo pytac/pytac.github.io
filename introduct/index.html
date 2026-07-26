@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>介绍 | Pytac's Website</title>
+
+    <link rel="stylesheet" href="/style/menu.css">
+
+    <style>
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+                /* 加上轻微上移，更有层次感 */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            animation: fadeIn 1.5s ease-in-out forwards;
+            background-color: #ffffff;
+
+        }
+
+        .translate {
+            border: 1px black solid;
+            border-radius: 9999px;
+            margin-top: 3vh;
+            margin-left: 15vw;
+            margin-right: 15vw;
+            background-color: #d1d1d1;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .communication {
+            border: 1px black solid;
+            border-radius: 9999px;
+            background-color: #ffffff;
+        }
+
+        .main {
+            margin-left: 15vw;
+            margin-right: 15vw;
+        }
+
+        .main p a {
+            color: blue;
+        }
+
+        .main section {
+            border-bottom: 1px #eee solid;
+        }
+
+        code {
+            box-sizing: border-box;
+            font: 14px/22px Menlo, Monaco, Consolas, sans-serif;
+            font-family: Menlo, Monaco, Consolas, sans-serif;
+            background-color: #ebeef2;
+            border-radius: 6px;
+            align-items: center;
+            padding: 0 5px;
+            display: inline-flex;
+            font-size: .875em !important;
+        }
+    </style>
+</head>
+<body> 
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于我</a></li>
+        </ul>
+    </nav>
+
+    <div class="translate">
+        <div class="communication">
+            <p>你是社区的一员</p>
+        </div>
+        <div class="advancement">
+            <p>你是招生办的老师(升学/简历专区)</p>
+        </div>
+    </div>
+
+    <section class="main">
+        <section>
+        <h1>关于我</h1>
+            <p>你好！我是 Pytac，是一个来自中国的学生！</p>
+            <p>我喜欢编程，目前有 <code class="year" title="是实时计算的哦！"></code> 年多的编程经验！</p>
+            <script>
+                document.querySelector('.year').textContent = new Date().getFullYear() - 2021 -1;
+            </script>
+            <p>我最喜欢使用 <span title="好吃、爱吃">Python</span>。另外，我也会许多其他的语言，比如 <span title="不然你怎么可能看到这个网站">HTML+JavaScript+CSS</span>、<span title="误入OI，不想搞竞赛啊!!!!!">C/C++</span> 等等</p>
+            <!-- 统计语言网站不可使用 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pytac" alt="Top Languages"/> -->
+            <p>我最近在研究 <code>神经网络</code>，喜欢搞一些AI。我在使用 <a href="https://github.com/ollama/ollama">Ollama</a>, <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a> 等工具。<del>ComfyUI比较少用，我要赶紧学一下了，不然感觉自己都成原始人了</del></p>
+        </section>
+        
+        <section>
+        <h1>我的名字</h1>
+            <p>我之前有用过 <code>Python虫</code> 这个名字，但是我觉得这个名字很奇怪，而且还容易产生误会，所以我拿了 <code>Pyt</code> 和 <code>c</code>(“虫”的首字母)，最后用 <code>a</code> 连接起来，就形成了 <code>Pytac</code>!</p>
+            <p>我在 GitHub 也有用过另外一个名字，是 <a href="https://github.com/hallo-py">hallo-py</a>，为了统一，所以现在也不用了。<del>虽然这个账号现在也是我在占用</del></p>
+            <p>至于csdn。那是很久以前注册的，当时我都还没有 <code>Pytac</code> 这个名字，所以写了个 <code>RedStone114514</code>。<del>假如复制必须登陆，谁想注册啊...</del></p>
+        </section>
+    </section>
+
+</body>
+</html>
