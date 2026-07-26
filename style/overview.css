@@ -18,11 +18,47 @@ body {
     opacity: 0;
     animation: fadeIn 1.5s ease-in-out forwards;
 
-    font-family: sans-serif;
+    font-family: 'Monaspace Neonon', sans-serif;
 }
 
-/* 菜单容器（导航栏） in menu.css */
-@import url('/style/menu.css');
+/* 菜单容器（导航栏） */
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #eee;
+    padding: 16px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ⬇️ 核心修改：清除 ul 默认样式，变成干净的“列” */
+.menu ul {
+    display: flex;
+    gap: 32px;              /* 每个菜单项之间的间距，调大调小随你 */
+    list-style: none;       /* 去掉圆点 */
+    margin: 0;              /* 去掉外边距 */
+    padding: 0;             /* 去掉缩进 */
+}
+
+/* 菜单链接样式 */
+.menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-family: 'Monaspace Neon', sans-serif;
+    transition: color 0.3s;
+    padding: 8px 0;         /* 可选：上下加点内边距，让点击区域更大 */
+    border-bottom: 2px solid transparent; /* 预留下划线位置，悬停时出现 */
+}
+
+.menu a:hover {
+    color: #4A90D9;
+    border-bottom-color: #4A90D9; /* 悬停时出现彩色下划线，更高级 */
+}
 
 /* 首屏：占满一屏高度，内部 flex 居中 */
 .hero {
