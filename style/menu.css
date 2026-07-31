@@ -5,7 +5,7 @@
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid #eee;
-    padding: 16px 48px;
+    padding: 2vh 4vw;
     display: flex;
     justify-content: space-between;
     align-items: center;

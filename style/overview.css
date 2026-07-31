@@ -27,6 +27,7 @@ body {
 /* 首屏：占满一屏高度，内部 flex 居中 */
 .hero {
     min-height: 85vh;
+    /* width: 88vw; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +51,7 @@ body {
 .about, .projects, .contact {
     padding: 60px 20px;
     max-width: 900px;
-    margin: 0 auto;          /* 水平居中 */
+    /* margin: 0 auto; */
     border-bottom: 1px solid #eee; /* 分割线 */
 }
 

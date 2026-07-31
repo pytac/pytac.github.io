@@ -1,27 +1,40 @@
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     gap: 30px;
+    width: 80%;
 }
 
 .project-card {
     background: #fafbfc;
+
+    width: 100%;
     padding-left: 1vw;
     padding-top: 1vh;
     padding-bottom: 3vh;
+    margin: 0 auto;
     border: 1px solid #e9ecf0;
     border-radius: 12px;
+
     text-align: center;
+    text-decoration: none;
+    color: black;
+    display: grid;
+
     transition: all 0.25s ease;
 }
 
-.projects > h2, .pro1 {
-    grid-column: 1/ span 2;
+.project-title {
+    display: flex;
+    flex-direction: column;
 }
 
-.project-card {
-    text-decoration: none;
-    color: black;
+.project-title > *{
+    margin: 0;
+}
+
+.projects > .project-title, .pro1 {
+    grid-column: 1/ span 2;
 }
 
 .repo {
@@ -33,14 +46,15 @@
     color: black;
     font-family: 'Courier New', monospace;
     text-align: left;
+    word-break: break-all;
 }
 
 .repo a:hover {
     text-decoration: underline black 2px;
 }
 
-.description {
-    margin: center;
+.description > *{
+    text-align: center;
 }
 
 .project-card:hover {
