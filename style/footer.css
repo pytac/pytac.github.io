@@ -4,10 +4,20 @@
     text-align: center;
 
     
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 3fr 1fr;
-    height: 20vh;
+    grid-template-rows: 3fr 1fr; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.footer .footer-content {
+    display: flex;
+    align-content: center;
+
 }
 
 .footer *{
