@@ -53,6 +53,10 @@ body {
     max-width: 900px;
     /* margin: 0 auto; */
     border-bottom: 1px solid #eee; /* 分割线 */
+
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: left;
 }
 
 /* 项目卡片 in project.css */

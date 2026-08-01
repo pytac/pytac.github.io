@@ -22,6 +22,9 @@
     text-align: center;
     transition: all 0.25s ease;
     cursor: default;
+
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .icon-card:hover {

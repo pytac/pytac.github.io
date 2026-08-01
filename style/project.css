@@ -9,6 +9,7 @@
     background: #fafbfc;
 
     width: 100%;
+    box-sizing: border-box;
     padding-left: 1vw;
     padding-top: 1vh;
     padding-bottom: 3vh;
