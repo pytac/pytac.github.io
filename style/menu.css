@@ -26,6 +26,7 @@
     color: #555;
     font-weight: 500;
     font-family: 'Monaspace Neon', sans-serif;
+    font-size: 1rem;
     transition: color 0.3s;
     padding: 8px 0;         /* 可选：上下加点内边距，让点击区域更大 */
     border-bottom: 2px solid transparent; /* 预留下划线位置，悬停时出现 */

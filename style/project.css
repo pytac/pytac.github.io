@@ -59,7 +59,6 @@
 }
 
 .project-card:hover {
-    background: #ffffff;
     border-color: #d0d7de;
     transform: translateY(-4px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
