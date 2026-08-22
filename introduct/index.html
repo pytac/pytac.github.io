@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>介绍 | Pytac's Website</title>
+    <title>Introduction | 介绍 | Pytac's Website</title>
 
     <link rel="stylesheet" href="/style/menu.css">
+    <link rel="stylesheet" href="/style/footer.css">
 
     <style>
 
@@ -84,9 +85,18 @@
                 0 8px 16px -6px rgba(0, 0, 0, 0.10);
         }
 
+        .main > hr {
+            border: 1px #f4f4f4 solid;
+            margin: 5vh 0;
+        }
+
         .content > h1.title {
             border-bottom: 2px #d4d6d9 solid;
             padding-bottom: 2vh;
+        }
+
+        .content > p {
+            font-size: 1.2rem;
         }
 
         code {
@@ -96,7 +106,7 @@
             background-color: #ebeef2;
             border-radius: 6px;
             align-items: center;
-            padding: 0 5px;
+            padding: 0 10px;
             display: inline-flex;
             font-size: .875em !important;
         }
@@ -122,11 +132,13 @@
             <script>
                 document.querySelector('.year').textContent = new Date().getFullYear() - 2021 -1;
             </script>
-            <p>我最喜欢使用 <span title="好吃、爱吃">Python</span>。另外，我也会许多其他的语言，比如 <span title="不然你怎么可能看到这个网站">HTML+JavaScript+CSS</span>、<span title="误入OI，不想搞竞赛啊!!!!!">C/C++</span> 等等</p>
+            <p>我最喜欢使用 <span title="好吃、爱吃">Python</span>。另外，我也会许多其他的语言，比如 <span title="不然你怎么可能看到这个网站">HTML+JavaScript+CSS</span>、<span title="误入OI，不想搞竞赛啊!!!!!">C++</span> 等等</p>
             <!-- 统计语言网站不可使用 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pytac" alt="Top Languages"/> -->
             <p>我最近在研究 <code>神经网络</code>，喜欢搞一些AI。我在使用 <a href="https://github.com/ollama/ollama">Ollama</a>, <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a> 等工具。<del>ComfyUI比较少用，我要赶紧学一下了，不然感觉自己都成原始人了</del></p>
         </section>
         
+        <hr/>
+
         <section class="content">
             <h1 class="title">我的名字</h1>
             <p>我之前有用过 <code>Python虫</code> 这个名字，但是我觉得这个名字很奇怪，而且还容易产生误会，所以我拿了 <code>Pyt</code> 和 <code>c</code>(“虫”的首字母)，最后用 <code>a</code> 连接起来，就形成了 <code>Pytac</code>!</p>
@@ -136,5 +148,23 @@
 
     </section>
 
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="website_info">
+                <h3>网站信息</h3>
+                <p>本网站使用 CC BY-NC-SA 4.0 许可证</p>
+                <p>本网站的代码在 <a href="https://github.com/pytac/pytac.github.io" target="_blank">GitHub</a> 上开源</p>
+            </div>
+            <div class="thanking">
+                <h3>引用/感谢</h3>
+                <p>部分字体来自 <a href="https://monaspace.githubnext.com/" class="radon">Monaspace(Radon)</a></p>
+                <p>部分图标来自 <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> 与 各自网站的 favicon.ico</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Pytac, All Rights Reserved.
+        </div>
+    </footer>
 </body>
 </html>
